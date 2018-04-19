@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nelson.apppit2_clase1.MainActivity">
+<!--
+Cuando :
+    android:orientation="horizontal"
+    <TextView
+        android:textSize="30dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAzul"
+        android:text="Texto1"/>
+-->
+
+    <TextView
+        android:id="@+id/textview_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textSize="50dp"
+        android:textColor="@color/colorAzul"
+        android:text="Datos Personales"/>
+
+<!--dp densidad de porpocion
+Ctrl + click en color Azul
+En EditText
+    Se puede poner android:layout_height="warp_content"
+-->
+    <TextView
+        android:id="@+id/edittext_datos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:enabled="false"
+        android:textSize="20dp"
+        android:hint="Pulsa un Botón de la parte Inferior"
+        android:textColor="@color/colorNegro"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        >
+    <Button
+        android:id="@+id/button_facultad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Facultad_Ciencias"
+        android:textSize="18dp"
+        android:text="Facultad"
+        />
+    <Button
+        android:id="@+id/button_codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20152734A"
+        android:onClick="Codigo"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="Reset"/>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppPIT2_Clase1</string>
+    <string-array name="facultades">
+        <item>FIA</item>
+        <item>FC</item>
+        <item>FIEE</item>
+    </string-array>
+
+</resources>
